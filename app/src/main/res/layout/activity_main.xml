@@ -4,12 +4,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    >
 
     <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:title="MoPTu"
-        android:background="@color/cyan"/>
+        android:background="@color/cyan"
+        app:menu="@menu/toolbar"
+        />
+    
+    <FrameLayout
+        android:id="@+id/fragments_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        />
 
 </LinearLayout>
